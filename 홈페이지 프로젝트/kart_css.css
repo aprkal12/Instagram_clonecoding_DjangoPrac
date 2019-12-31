@@ -1,0 +1,230 @@
+		html{
+			cursor: url(cursor3.cur), auto;
+		}
+		body {
+			background-color: black;
+			cursor: url(cursor3.cur), auto;
+		}
+		a{
+			text-decoration: none;
+			color: tomato;
+		}		
+		#bgvideo{
+			width:100%; 
+			height:100%; 
+			position:fixed;
+			z-index: -2;
+		}
+		#bgcolorbox{
+			height:100vh;
+			width:100%;
+			background-color:black;
+			z-index:-1;
+			opacity: 0.7;
+			position:fixed;"
+		}
+		header{
+			height: 150px;
+			text-align: center;
+			border-bottom: solid 1px yellow;
+			color:yellow;
+		}
+		header ul{
+			text-align: right; 
+			margin-top: 5px; 
+			margin-right: 5px;
+		}
+		header li{
+			list-style-type: none;
+			display: inline;
+			font-size: 20px;
+			font-weight: bold;
+		}
+		nav{
+			width:250px;
+			border-right: solid 1px yellow;
+			color:yellow;
+		}
+		nav ul{
+			list-style-type: none;
+			font-family: sans-serif;
+			
+			margin-left:40px;
+			padding-left: 0px;
+		}
+		nav p{
+			font-weight: bold;
+			font-size: 20px;
+			margin-left: 25px;
+
+		}
+		nav a:hover{
+			background-color: #d2691e;
+			color:white;
+			
+		}
+		section{
+			border: solid 1px yellow;
+			color:yellow;
+		}
+		footer{
+			border-top:solid 1px yellow;
+			clear:both;
+			text-align: center;
+			height:100px;
+			
+		}
+		footer li{
+			list-style-type: none;
+			display:inline;
+			color: yellow;
+			font-size: 20px;
+			font-weight: bold;
+		}
+		footer h4{
+			color:yellow;
+		}		
+		section, nav{
+			height:700px;
+			float:left;
+		}
+		/* kart_main */
+		.interface{
+			width:300px;
+			height:240px;		 
+			display:inline-block; 
+			float:left; 
+			margin:15px;
+			margin-top:35px;
+			transition-duration: 0.3s;
+		}
+		.interface:hover{
+			transform: scale(1.1);
+			-webkit-transform:scale(1.1);
+			transition-duration:0.3s;
+		}
+		.interface h4{
+			color:white; 
+			text-align:center; 
+			font-size: 20px; 
+			margin-top: 19px; 
+			margin-bottom: 18px;
+		}
+		.interface img{
+			width:300px;
+		}
+		.M_interface{
+			width:1000px;
+			height:525px;
+			 
+			margin:auto;
+		}
+		/* kart_sub_1 */
+		.karts{
+			display:inline-block;
+			border: solid 1px yellow; 
+			margin:10px;
+			float:left;
+			transition-duration: 0.3s;
+		}
+		.karts:hover{
+			transform: scale(1.1);
+			-webkit-transform:scale(1.1);
+			transition-duration:0.3s;
+		}
+		.karts img{
+			width:300px;
+			height:200px;
+		}
+		.karts li{
+			list-style-type:none;	
+		}
+		.karts h3{
+			color:yellow;
+			text-align: center;
+		}
+
+		/* kart_sub_2, sub_2-1 */
+		.maps{
+			display:inline-block;
+			border: solid 1px yellow; 
+			margin:10px;
+			float:left;
+			transition-duration:0.3s;
+		}
+		.maps li{
+			list-style-type:none;
+			text-align: center;
+			font-weight: bold;				
+		}
+		.maps ul{
+			padding:0;
+		}
+		.maps h2{
+			color:yellow;
+			text-align: center;
+		}
+		.maps:hover{
+			transform: scale(1.1);
+			-webkit-transform:scale(1.1);
+			transition-duration:0.3s;
+		}
+		
+		/* kart_sub_3 */
+		.players{
+			display:inline-block;
+			border: solid 1px yellow; 
+			margin:10px;
+			float:left;
+			width:40%;
+		}
+		.players li{
+			list-style-type:none;
+		}
+		.players h3{
+			color:yellow;
+			text-align: center;
+		}
+		.players p{
+			color:yellow;
+		}
+		.players img{
+			float:left;
+			margin-right: 10px;
+		}
+		.players button{
+			padding:7px 15px 7px 15px;
+			width:180px;
+			border:none;
+			background-color: #5f9ea0;
+			color:white;
+			font-weight: bold;
+			font-size: 17px;
+		}
+		.playersmenu {
+			display:none;
+			width:180px;
+			position:absolute;
+			background-color:#1e821e;
+		}
+		.playersmenu a{
+			display: block;
+			text-align: center;
+			padding:9px;
+			color:black;
+		}
+		.playersmenu a:hover{
+			background-color:mediumseagreen;
+			color:white;
+		}
+		.dropdown:hover .playersmenu{
+			display: block;
+		}
+		.dropdown{
+			margin:auto;
+			width:180px;
+			height:38px;
+			margin-top:16px;
+			display:inline-block;
+		}
+

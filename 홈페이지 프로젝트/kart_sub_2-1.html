@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset ="utf-8">
+	<title>홈페이지 만들기</title>
+	<link rel="stylesheet" type ="text/css" href="kart_css.css">
+	<style>
+		/* 미디어 쿼리 
+		max == : %d보다 작을때 반응 */
+		@media(max-width:1794px){ /* 컨텐츠의 갯수 : 가로 4칸 (마지막줄 2칸), 세로 3칸 */
+			nav{
+				
+				height:1026px;
+			}
+		}
+		@media(max-width:1492px){ /* 컨텐츠 갯수 : 가로 3칸 (마지막줄 1칸), 세로 4칸  */
+			nav{
+				
+				height:1369px;
+			}
+		}
+		@media(max-width:1190px){ /* 컨텐츠 갯수 : 가로 2칸, 세로 5칸 */
+			nav{
+				
+				height:1713px;
+			}
+		}
+		@media(max-width:888px){ /* 컨텐츠 갯수 : 가로 1칸, 세로 10칸 */
+			nav{
+				
+				height:3426px;
+			}
+		}
+		#keyword{
+
+		}
+	</style>
+	<script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$("#keyword").keyup(function(){
+				var a = $(this).val();
+
+				$(".maps").hide();
+									
+				$(".maps:contains(" +a+ ")").css('display', 'inline-block');
+				
+				if(a == ''){
+					$(".maps").show();				
+				}
+				
+
+			})
+		})
+	</script>
+</head>
+<body>
+	<video muted autoplay loop id="bgvideo">
+			<source src="1213_Kart_god.webm" type="video/webm">
+	</video>
+	<div id="bgcolorbox"></div>
+
+	<header>
+		<h1>카트 초보를 위한 공략집</h1>
+		<br>
+		<br>
+		<div style="padding-left: 15px; float:left; font-size: 20px; font-weight: bold;">
+			검색 : <input type="text" id="keyword">
+		</div>
+		<ul>
+			<li><a href = "http://kart.nexon.com/main/index.aspx" target="_blank">카트 홈페이지 </a>|</li>
+		 	<li><a href = "https://www.facebook.com/kart.nexon" target="_blank">카트 페이스북 </a></li>
+		</ul>
+	</header>
+
+
+	<nav>
+		<p><a href="kart_sub_1.html">카트</a></p>
+		<p><a href="kart_sub_2.html">카트의 맵들<br>(인기 랜덤 노말)</a></p>
+		<p><a href="kart_sub_3.html">카트 기술들</a></p>	
+	</nav>
+
+	
+	<div class="maps">
+		<h2>차이나 황산</h2>
+		<img src ="maps/차이나 황산.jpg" width="280px;" height="150px;"title="차이나 황산">
+		<ul>
+			<li><a href ="https://www.youtube.com/watch?v=itzMfDra2oE" target= "_blank">초보 공략</a></li>
+			<li><a href ="https://www.youtube.com/watch?v=7wF2AhiL6gg" target= "_blank">중수 공략</a></li>
+			<li><a href ="https://www.youtube.com/watch?v=eN5KJwwaWM4" target= "_blank">고수 공략</a></li>
+		</ul>
+	</div>
+	<div class="maps">
+		<h2>신화 오딘의 궁전</h2>
+		<img src="maps/신화 오딘의 궁전.jpg" width = "280px;" height="150px;" title="신화 오딘의 궁전">
+		<ul>
+			<li><a href="https://www.youtube.com/watch?v=vzttnKpRGFQ" target="_blank">초보 공략</a></li>
+			<li><a href="https://www.youtube.com/watch?v=zHXW7xsqe4c" target="_blank">중수 공략</a></li>
+			<li><a href="https://www.youtube.com/watch?v=wDg01-nhBF0" target="_blank">고수 공략</a></li>
+		</ul>
+	</div>
+	<div class="maps">
+		<h2>쥐라기 공룡 무덤</h2>
+		<img src="maps/쥐라기 공룡 무덤.jpg" width = "280px;" height="150px;" title="쥐라기 공룡 무덤">
+		<ul>
+			<li><a href ="https://www.youtube.com/watch?v=6kgelPei8Yw" target= "_blank">초보 공략</a></li>
+			<li><a href ="https://www.youtube.com/watch?v=xq4KCRWSc2E" target= "_blank">중수 공략</a></li>
+			<li><a href ="https://www.youtube.com/watch?v=t90doWKtxLc" target= "_blank">고수 공략</a></li>
+		</ul>
+	</div>
+	<div class="maps">
+		<h2>신화 신들의 세계</h2>
+		<img src="maps/신화 신들의 세계.jpg" width = "280px;" height="150px;" title="신화 신들의 세계">
+		<ul>
+			<li><a href="https://www.youtube.com/watch?v=Wkq4Gkq1dZA" target="_blank">초보 공략</a></li>
+			<li><a href="https://www.youtube.com/watch?v=4wOl36nS26I" target="_blank">중수 공략</a></li>
+			<li><a href="https://www.youtube.com/watch?v=4WecYuJovos" target="_blank">고수 공략</a></li>
+		</ul>
+	</div>
+	<div class="maps">
+		<h2>네모 장난감 선물공장</h2>
+		<img src="maps/네모 장난감 선물공장.jpg" width = "280px;" height="150px;" title="네모 장난감 선물공장">
+		<ul>
+			<li><a href="https://www.youtube.com/watch?v=ZuJcj69pZw8" target="_blank">초보 공략</a></li>
+			<li><a href="https://www.youtube.com/watch?v=FlQ6tJ5-pTU" target="_blank">중수 공략</a></li>
+			<li><a href="https://www.youtube.com/watch?v=xgFh_7XFUGk" target="_blank">고수 공략</a></li>
+		</ul>
+	</div>
+	<div class="maps">
+		<h2>WKC 상해 서킷</h2>
+		<img src="maps/WKC 상해 서킷.jpg" width = "280px;" height="150px;" title="WKC 상해 서킷">
+		<ul>
+			<li><a href="https://www.youtube.com/watch?v=1aKCXfTQ9jE" target="_blank">초보 공략</a></li>
+			<li><a href="https://www.youtube.com/watch?v=A_jCDAdHJi4" target="_blank">중수 공략</a></li>
+			<li><a href="https://www.youtube.com/watch?v=v4Du7Em1BA4" target="_blank">고수 공략</a></li>
+		</ul>
+	</div>
+	<div class="maps">
+		<h2>네모 강철바위 용광로</h2>
+		<img src="maps/네모 강철바위 용광로.jpg" width = "280px;" height="150px;" title="네모 강철바위 용광로">
+		<ul>
+			<li><a href="https://www.youtube.com/watch?v=op9Jmx1N7yg" target="_blank">초보 공략</a></li>
+			<li><a href="https://www.youtube.com/watch?v=EvJ37rX1214" target="_blank">중수 공략</a></li>
+			<li><a href="https://www.youtube.com/watch?v=ZwtELG9-dJc" target="_blank">고수 공략</a></li>
+		</ul>
+	</div>
+	<div class="maps">
+		<h2>월드 뉴욕 대질주</h2>
+		<img src="maps/월드 뉴욕 대질주.jpg" width = "280px;" height="150px;" title="월드 뉴욕 대질주">
+		<ul>
+			<li><a href="https://www.youtube.com/watch?v=99gyHYc12_E" target="_blank">초보 공략</a></li>
+			<li><a href="https://www.youtube.com/watch?v=rbmts7akkFc" target="_blank">중수 공략</a></li>
+			<li><a href="https://www.youtube.com/watch?v=Swcvk4FLoYs" target="_blank">고수 공략</a></li>
+		</ul>
+	</div>
+	<div class="maps">
+		<h2>월드 파리 에펠탑 다이브</h2>
+		<img src="maps/월드 파리 에펠탑 다이브.jpg" width = "280px;" height="150px;" title="월드 파리 에펠탑 다이브">
+		<ul>
+			<li><a href="https://www.youtube.com/watch?v=3BpItgpjQRc" target="_blank">초보 공략</a></li>
+			<li><a href="https://www.youtube.com/watch?v=XpTJNrhb-AI" target="_blank">중수 공략</a></li>
+			<li><a href="https://www.youtube.com/watch?v=ETBxp4vJygM" target="_blank">고수 공략</a></li>
+		</ul>
+	</div>
+	<div class="maps">
+		<h2>빌리지 남산</h2>
+		<img src="maps/빌리지 남산.jpg" width = "280px;" height="150px;" title="빌리지 남산">
+		<ul>
+			<li><a href="https://www.youtube.com/watch?v=JQdEhK7kqpc" target="_blank">초보 공략</a></li>
+			<li><a href="https://www.youtube.com/watch?v=cC2mW02qSvo" target="_blank">중수 공략</a></li>
+			<li><a href="https://www.youtube.com/watch?v=LeisVIF4RgE" target="_blank">고수 공략</a></li>
+		</ul>
+	</div>
+	
+	<footer>
+		<ul>
+			<li><a href="kart_main.html">Home |</a></li>
+			<li><a href="kart_sub_2.html">1 |</a></li>
+			<li><a href="kart_sub_2-1.html">2</a></li>
+		</ul>
+		<h4>1901588 김동현</h4>
+	</footer>
+
+</body>
+</html>
