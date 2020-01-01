@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+{% block title %}
+{% endblock %}
+
+{% block content %}
+<div class = 'row'>
+    <div class = 'col'></div>
+    <div class = 'col-6'>
+        <form action="" method = 'POST'>
+            <div class = 'alert alert-info'>가입할 정보를 입력하세요</div>
+                {% csrf_token %}
+            <label>Username : <input type="text" name = 'username'></label> <br>
+            <label>Password : <input type="password" name = 'password'></label><br>
+            <label>Confirm Password : <input type="password" name = 'password2'></label><br>
+            <input type="submit" value = "sign up" class = "btn btn-outline-info">
+        </form>
+    </div>
+    <div class="col"></div>
+</div>
+{% endblock %}
